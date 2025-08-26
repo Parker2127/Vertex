@@ -238,14 +238,6 @@ This project is licensed under the **MIT License** - see the `LICENSE` file for 
 
 ---
 
-### 📞 Support
-
-For support and questions:
-
-* Create an issue on GitHub.
-* Contact: `[your-email@example.com]`
-* Documentation: `[Link to docs if available]`
-
 Built with ❤️ for the FinTech compliance community.
 
 **Star ⭐ this repository if you found it helpful!**
