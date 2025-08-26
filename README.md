@@ -54,6 +54,8 @@ A professional compliance management platform for financial institutions.
 
 ### 🏃‍♂️ Quick Start
 
+[**Live Demo**](https://fin-vertex.replit.app)
+
 #### Prerequisites
 
 * Node.js 18+ and npm
