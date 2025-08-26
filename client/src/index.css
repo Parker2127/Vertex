@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(210 25% 7.8431%);
+  --card: hsl(180 6.6667% 97.0588%);
+  --card-foreground: hsl(210 25% 7.8431%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 25% 7.8431%);
+  --primary: hsl(203.8863 88.2845% 53.1373%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(210 25% 7.8431%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(240 1.9608% 90%);
+  --muted-foreground: hsl(210 25% 7.8431%);
+  --accent: hsl(211.5789 51.3514% 92.7451%);
+  --accent-foreground: hsl(203.8863 88.2845% 53.1373%);
+  --destructive: hsl(356.3033 90.5579% 54.3137%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(201.4286 30.4348% 90.9804%);
+  --input: hsl(200 23.0769% 97.4510%);
+  --ring: hsl(202.8169 89.1213% 53.1373%);
+  --chart-1: hsl(203.8863 88.2845% 53.1373%);
+  --chart-2: hsl(159.7826 100% 36.0784%);
+  --chart-3: hsl(42.0290 92.8251% 56.2745%);
+  --chart-4: hsl(147.1429 78.5047% 41.9608%);
+  --chart-5: hsl(341.4894 75.2000% 50.9804%);
+  --sidebar: hsl(180 6.6667% 97.0588%);
+  --sidebar-foreground: hsl(210 25% 7.8431%);
+  --sidebar-primary: hsl(203.8863 88.2845% 53.1373%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(211.5789 51.3514% 92.7451%);
+  --sidebar-accent-foreground: hsl(203.8863 88.2845% 53.1373%);
+  --sidebar-border: hsl(205.0000 25.0000% 90.5882%);
+  --sidebar-ring: hsl(202.8169 89.1213% 53.1373%);
+  --font-sans: Open Sans, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 1.3rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 2px 4px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 4px 6px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 8px 10px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+/* Doodle Theme Styles */
+.doodle-theme {
+  --background: hsl(50 100% 97%);
+  --foreground: hsl(260 15% 15%);
+  --card: hsl(60 100% 95%);
+  --card-foreground: hsl(260 15% 15%);
+  --primary: hsl(325 100% 48%);
+  --primary-foreground: hsl(60 100% 97%);
+  --border: hsl(260 40% 20%);
+  --font-sans: "Comic Sans MS", cursive, sans-serif;
+}
+
+.doodle-theme * {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.doodle-theme .card,
+.doodle-theme [data-card="true"] {
+  border: 3px solid hsl(260 40% 20%) !important;
+  border-radius: 25px !important;
+  background: hsl(60 100% 95%) !important;
+  box-shadow: 4px 4px 0px hsl(260 40% 20%) !important;
+  transform: rotate(-0.5deg);
+  transition: all 0.3s ease;
+}
+
+.doodle-theme .card:hover,
+.doodle-theme [data-card="true"]:hover {
+  transform: rotate(0.5deg) scale(1.02);
+  box-shadow: 6px 6px 0px hsl(260 40% 20%) !important;
+}
+
+.doodle-theme button {
+  border: 2px solid hsl(260 40% 20%) !important;
+  border-radius: 15px !important;
+  font-weight: bold !important;
+  transform: rotate(-0.3deg);
+  transition: all 0.2s ease;
+  background: hsl(325 100% 85%) !important;
+  color: hsl(260 15% 15%) !important;
+}
+
+.doodle-theme button:hover {
+  transform: rotate(0.3deg) scale(1.05);
+  box-shadow: 3px 3px 0px hsl(260 40% 20%) !important;
+  background: hsl(325 100% 75%) !important;
+}
+
+.doodle-theme .bg-primary {
+  background: hsl(325 100% 48%) !important;
+}
+
+.doodle-theme .text-primary {
+  color: hsl(325 100% 48%) !important;
+}
+
+.doodle-theme input,
+.doodle-theme textarea,
+.doodle-theme select {
+  border: 2px solid hsl(260 40% 20%) !important;
+  border-radius: 12px !important;
+  background: hsl(50 100% 97%) !important;
+  padding: 8px 12px !important;
+}
+
+.doodle-theme .bg-emerald-100 {
+  background: hsl(150 100% 85%) !important;
+}
+
+.doodle-theme .bg-yellow-100 {
+  background: hsl(50 100% 85%) !important;
+}
+
+.doodle-theme .bg-blue-100 {
+  background: hsl(200 100% 85%) !important;
+}
+
+.doodle-theme .bg-red-100 {
+  background: hsl(0 100% 85%) !important;
+}
+
+.doodle-theme .text-emerald-800 {
+  color: hsl(150 100% 25%) !important;
+}
+
+.doodle-theme .text-yellow-800 {
+  color: hsl(50 100% 25%) !important;
+}
+
+.doodle-theme .text-blue-800 {
+  color: hsl(200 100% 25%) !important;
+}
+
+.doodle-theme .text-red-800 {
+  color: hsl(0 100% 25%) !important;
+}
+
+.doodle-theme h1,
+.doodle-theme h2,
+.doodle-theme h3,
+.doodle-theme h4 {
+  font-weight: bold !important;
+  text-shadow: 2px 2px 0px hsl(325 100% 85%);
+}
+
+.doodle-theme .bg-white {
+  background: hsl(60 100% 95%) !important;
+}
+
+.doodle-theme .border-slate-200 {
+  border-color: hsl(260 40% 20%) !important;
+}
+
+.doodle-theme .shadow-sm {
+  box-shadow: 3px 3px 0px hsl(260 40% 20%) !important;
+}
+
+.doodle-theme .animate-spin {
+  border-color: hsl(325 100% 48%) hsl(325 100% 85%) hsl(325 100% 85%) hsl(325 100% 85%) !important;
+}
+
+/* Add doodle decorative elements */
+.doodle-theme::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, hsl(325 100% 95%) 2px, transparent 2px),
+    radial-gradient(circle at 80% 80%, hsl(200 100% 95%) 2px, transparent 2px),
+    radial-gradient(circle at 40% 60%, hsl(50 100% 95%) 1px, transparent 1px);
+  background-size: 100px 100px, 150px 150px, 80px 80px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.dark {
+  --background: hsl(0 0% 0%);
+  --foreground: hsl(200 6.6667% 91.1765%);
+  --card: hsl(228 9.8039% 10%);
+  --card-foreground: hsl(0 0% 85.0980%);
+  --popover: hsl(0 0% 0%);
+  --popover-foreground: hsl(200 6.6667% 91.1765%);
+  --primary: hsl(203.7736 87.6033% 52.5490%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(195.0000 15.3846% 94.9020%);
+  --secondary-foreground: hsl(210 25% 7.8431%);
+  --muted: hsl(0 0% 9.4118%);
+  --muted-foreground: hsl(210 3.3898% 46.2745%);
+  --accent: hsl(205.7143 70% 7.8431%);
+  --accent-foreground: hsl(203.7736 87.6033% 52.5490%);
+  --destructive: hsl(356.3033 90.5579% 54.3137%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(210 5.2632% 14.9020%);
+  --input: hsl(207.6923 27.6596% 18.4314%);
+  --ring: hsl(202.8169 89.1213% 53.1373%);
+  --chart-1: hsl(203.8863 88.2845% 53.1373%);
+  --chart-2: hsl(159.7826 100% 36.0784%);
+  --chart-3: hsl(42.0290 92.8251% 56.2745%);
+  --chart-4: hsl(147.1429 78.5047% 41.9608%);
+  --chart-5: hsl(341.4894 75.2000% 50.9804%);
+  --sidebar: hsl(228 9.8039% 10%);
+  --sidebar-foreground: hsl(0 0% 85.0980%);
+  --sidebar-primary: hsl(202.8169 89.1213% 53.1373%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(205.7143 70% 7.8431%);
+  --sidebar-accent-foreground: hsl(203.7736 87.6033% 52.5490%);
+  --sidebar-border: hsl(205.7143 15.7895% 26.0784%);
+  --sidebar-ring: hsl(202.8169 89.1213% 53.1373%);
+  --font-sans: Open Sans, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 1.3rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 2px 4px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 4px 6px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 8px 10px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
